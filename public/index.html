@@ -1,10 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Data</title>
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+          rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Hej med dig</h1>
+
+<!-- Header -->
+
+<header class="header">
+    <div class="logo">
+        <img src="logo.png">
+    </div>
+
+    <div class="nav-bar">
+        <ul>
+            <li>
+                <a href="">Mission</a>
+            </li>
+
+            <li>
+                <a href="">Rollemodeller</a>
+            </li>
+
+            <li>
+                <a href="">Data</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="kom-igang">
+        <button onclick="true">Kom igang</button>
+    </div>
+</header>
+
+
+<!-- Forsiden -->
+
+
+<section class="hero-section-container">
+    <div class="hero-image">
+
+    </div>
+
+    <div class="hero-logo">
+        <img src="logo.png">
+    </div>
+
+    <div class="hero-text">
+
+        <h1>Er du vores nye <br>
+            <em>Kvinde</em>
+            i IT</h1>
+    </div>
+    <div class="hero-link">
+        <a>
+
+        </a>
+    </div>
+</section>
+
+
+<!-- Første sektion -->
+
+
+<section class="first-section">
+    <h1 class="overskrift-for-section">RolleModeller i it</h1>
+
+    <div class="role-model-links">
+
+        <div class="role-model-images">
+            <ul>
+                <li>
+                    <a href="#third-section">
+                        <img src="woman-1.png" alt="role model">
+                    </a>
+                    <p><span class="full-name">Helle Cristensen</span>
+                        <br>er dygtig i sit fag og arbejder inde for IT-sikkerhed<br></p>
+
+                </li>
+
+                <li>
+                    <a href="#fourth-section">
+                        <img src="woman-2.png">
+                    </a>
+                    <p><span class="full-name">Marianne Petersen</span>
+                        <br>arbejder med front end kodning og design<br></p>
+                </li>
+                <li>
+                    <a href="#fifth-section">
+                        <img src="woman-3.png">
+                    </a>
+                    <p><span class="full-name">Julie Kristoffersen</span>
+                        <br> er mester i data og arbejder primært med backend<br></p>
+                </li>
+                <li>
+                    <a href="#sixth-section">
+                        <img src="woman-4.png">
+                    </a>
+                    <p><span class="full-name">Bente Clausen</span>
+                        <br>er konsulent og er en haj til at få systemer til at køre når ingen andre kan</p>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</section>
+
+<!-- Anden sektion -->
+
+<section class="second-section" id="second-section">
+    <div class="buttons">
+        <ul>
+            <li>
+                <button onclick="klikPåKnap()"> KLIK HER FOR GRAF
+
+                </button>
+            </li>
+            <li>
+                <button onclick="klikPåKnap()"> KLIK HER FOR GRAF
+
+                </button>
+            </li>
+            <li>
+                <button onclick="klikPåKnap()"> KLIK HER FOR GRAF
+
+                </button>
+            </li>
+        </ul>
+
+    </div>
+</section>
+
+<!-- Tredje sektion -->
+
+<section class=third-section id="third-section">
+    <div class="first-role-model">
+        <p>Helle Christensen arbejder inden for IT-sikkerhed, hvor hun beskytter systemer mod cybertrusler og sikrer, at
+            data er sikre. Hun er en rollemodel, fordi hun viser, at kvinder kan trives og lede i et teknisk felt, der
+            traditionelt har været domineret af mænd, samtidig med at hun inspirerer andre til at forfølge en karriere
+            inden for teknologi og sikkerhed.
+        </p>
+        <img src="woman-1.png">
+
+    </div>
+</section>
+
+<!-- Fjerde sektion -->
+
+<section class="fourth-section" id="fourth-section">
+    <div class="second-role-model">
+        <img src="woman-2.png">
+        <p>Marianne Petersen arbejder med front end-design og kodning, hvor hun skaber brugervenlige, smukke og
+            intuitive digitale oplevelser. Hun er en rollemodel, fordi hun kombinerer kreativitet med teknisk kunnen og
+            viser, at design og teknologi går hånd i hånd. Marianne inspirerer andre kvinder til at udforske den
+            visuelle og skabende side af IT-verdenen og til at turde tage plads i et område, hvor deres perspektiv
+            virkelig gør en forskel.
+        </p>
+    </div>
+
+</section>
+
+<!-- Femte sektion -->
+
+<section class="fifth-section" id="fifth-section">
+    <div class="third-role-model">
+        <p>
+            Julie Kristoffersen er mester i data og arbejder primært med backend-udvikling, hvor hun bygger de systemer
+            og strukturer, der får digitale løsninger til at fungere gnidningsfrit. Hun er en rollemodel, fordi hun
+            viser, at kvinder kan være markante kræfter i de mere tekniske og komplekse dele af IT. Julie inspirerer
+            andre til at udforske dataverdenen og beviser, at nysgerrighed, logik og problemløsning kan føre til stærke
+            og betydningsfulde karriereveje.
+        </p>
+        <img src="woman-3.png">
+    </div>
+</section>
+
+<!-- Sjette sektion -->
+
+<section class="sixth-section" id="sixth-section">
+    <div class="fourth-role-model">
+        <img src="woman-4.png">
+
+        <p>Bente Clausen er konsulent og en haj til at få systemer til at fungere, når ingen andre kan. Hun har en unik
+            evne til at analysere komplekse problemer og finde løsninger, der skaber ro, struktur og stabilitet. Bente
+            er en rollemodel, fordi hun viser, at faglig styrke og vedholdenhed kan løfte selv de sværeste projekter.
+            Hun inspirerer andre til at tro på deres kompetencer og til at gå nysgerrigt til de udfordringer, som
+            teknologiverdenen stiller.
+        </p>
+    </div>
+
+</section>
+
+
+<script src="index.js"></script>
 </body>
 </html>

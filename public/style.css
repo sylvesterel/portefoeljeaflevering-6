@@ -1,0 +1,274 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header styling */
+
+.logo img {
+    width: 5vh;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: cornflowerblue;
+    font-family: 'Old Standard TT', serif;
+    padding: 0 2vh;
+
+}
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 5vh
+}
+.kom-igang {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+
+}
+
+
+/* HERO section styling */
+
+.hero-section-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+    background-image: url("6762696f-5b95-48dd-b5db-c36bd794efd7.png");
+    background-size: cover;
+
+}
+
+.hero-logo img {
+    width: 50vh;
+    height: auto;
+}
+
+.hero-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Old Standard TT', serif;
+    font-size: 5vh;
+}
+
+/* Section 1 styling */
+
+.first-section {
+    background-color: lightgreen;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.overskrift-for-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vh;
+    font-family: 'Old Standard TT', serif;
+}
+
+.role-model-links {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.role-model-links .overskrift-for-section {
+    text-align: center;
+}
+
+.role-model-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    list-style: none;
+    width: auto;
+}
+
+.role-model-links img {
+    width: 20vh;
+    height: auto;
+    border-radius: 20rem;
+    border-style: groove;
+    border-color: lightpink;
+}
+
+.role-model-images {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.role-model-images p {
+    width: 20vh;
+    font-family: 'Old Standard TT', serif;
+}
+
+.role-model-images p .full-name {
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Old Standard TT', serif;
+}
+
+/* Section 2 styling */
+
+.second-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightpink;
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+}
+
+.buttons button {
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    border-radius: 20vh;
+    font-size: 10vh;
+    padding: 2vh;
+    margin: 2vh;
+
+}
+
+.buttons button:hover {
+    background-color: lightskyblue;
+
+}
+
+.buttons ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Section 3 styling */
+
+.third-section {
+    background-color: lightgreen;
+}
+
+.first-role-model {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+    padding: 20vh;
+}
+
+.first-role-model img {
+    width: 60vh;
+    height: auto;
+    border-radius: 20rem;
+    border-style: groove;
+    border-color: lightpink;
+}
+
+.first-role-model p {
+    font-family: 'Old Standard TT', serif;
+    font-size: 4vh;
+    color: white;
+}
+
+/* Section 4 styling */
+
+.fourth-section {
+    background-color: beige;
+}
+
+.second-role-model {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    padding: 20vh;
+}
+
+.second-role-model img {
+    width: 60vh;
+    height: auto;
+    border-radius: 20rem;
+    border-style: groove;
+    border-color: lightpink;
+}
+
+.second-role-model p {
+    font-family: 'Old Standard TT', serif;
+    font-size: 4vh;
+    color: black;
+}
+
+/* Section 5 styling */
+
+.fifth-section {
+    background-color: lightpink;
+}
+
+.third-role-model {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: lightpink;
+    padding: 20vh;
+}
+
+.third-role-model img {
+    width: 60vh;
+    height: auto;
+    border-radius: 20rem;
+    border-style: groove;
+    border-color: lightpink;
+}
+
+.third-role-model p {
+    font-family: 'Old Standard TT', serif;
+    font-size: 4vh;
+    color: white;
+}
+
+/* Section 6 styling */
+
+.sixth-section {
+    background-color: cadetblue;
+}
+
+.fourth-role-model {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+    padding: 20vh;
+}
+
+.fourth-role-model img {
+    width: 60vh;
+    height: auto;
+    border-radius: 20rem;
+    border-style: groove;
+    border-color: lightpink;
+}
+
+.fourth-role-model p {
+    font-family: 'Old Standard TT', serif;
+    font-size: 4vh;
+    color: black;
+}
