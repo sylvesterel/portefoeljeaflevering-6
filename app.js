@@ -33,7 +33,7 @@ app.get("/data", async (req, res) => {
 });
 
 app.get("/data/chart1", async (req, res) => {
-    const update = await pool.execute(`SELECT * FROM employed_end_november`)
+    const [update] = await pool.execute(`SELECT * FROM employed_end_november`)
     res.send(update)
 });
 

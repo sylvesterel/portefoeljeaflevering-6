@@ -1,4 +1,15 @@
+async function printData() {
+    const url = "/data/chart1"
+    const response = await fetch(url, {
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    console.log(await response.json())
+}
 
+printData();
 
 const ctx = document.querySelector('#chart1').getContext('2d');
 const chart1 = new Chart(ctx, {
