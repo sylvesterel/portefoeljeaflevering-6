@@ -28,7 +28,12 @@ const pool = mysql.createPool({
 app.use(express.static(path.join(process.cwd(), "public")));
 
 app.get("/data", async (req, res) => {
-    const update = await pool.execute(`SELECT * FROM data`)
+    const update = await pool.execute(`SELECT * FROM ek_kvalitet`)
+    res.send(update)
+});
+
+app.get("/data/chart1", async (req, res) => {
+    const update = await pool.execute(`SELECT * FROM employed_end_november`)
     res.send(update)
 });
 
