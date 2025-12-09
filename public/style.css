@@ -1,3 +1,33 @@
+@font-face {
+    font-family: Ppeditorialnew-Italic; /* set name */
+    src: url(fonts/PPEditorialNew-Italic.otf) format("opentype"); /* url of the font */
+}
+
+@font-face {
+    font-family: Ppeditorialnew; /* set name */
+    src: url(fonts/PPEditorialNew-Regular.otf) format("opentype"); /* url of the font */
+}
+
+@font-face {
+    font-family: Ppeditorialnew-Ultrabold; /* set name */
+    src: url(fonts/PPEditorialNew-Ultrabold.otf) format("opentype"); /* url of the font */
+}
+
+@font-face {
+    font-family: Ppeditorialnew-UltraboldItalic; /* set name */
+    src: url(fonts/PPEditorialNew-UltraboldItalic.otf) format("opentype"); /* url of the font */
+}
+
+@font-face {
+    font-family: Ppeditorialnew-Ultralight; /* set name */
+    src: url(fonts/PPEditorialNew-Ultralight.otf) format("opentype"); /* url of the font */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -15,7 +45,7 @@ html {
     justify-content: space-between;
     flex-direction: row;
     background-color: cornflowerblue;
-    font-family: 'Old Standard TT', serif;
+    font-family: 'Ppeditorialnew', serif;
     padding: 0 2vh;
 
 }
@@ -56,7 +86,7 @@ html {
     align-items: center;
     justify-content: center;
     color: white;
-    font-family: 'Old Standard TT', serif;
+    font-family: 'Ppeditorialnew-Ultralight', serif;
     font-size: 5vh;
 }
 
