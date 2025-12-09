@@ -1,33 +1,3 @@
-@font-face {
-    font-family: Ppeditorialnew-Italic; /* set name */
-    src: url(fonts/PPEditorialNew-Italic.otf) format("opentype"); /* url of the font */
-}
-
-@font-face {
-    font-family: Ppeditorialnew; /* set name */
-    src: url(fonts/PPEditorialNew-Regular.otf) format("opentype"); /* url of the font */
-}
-
-@font-face {
-    font-family: Ppeditorialnew-Ultrabold; /* set name */
-    src: url(fonts/PPEditorialNew-Ultrabold.otf) format("opentype"); /* url of the font */
-}
-
-@font-face {
-    font-family: Ppeditorialnew-UltraboldItalic; /* set name */
-    src: url(fonts/PPEditorialNew-UltraboldItalic.otf) format("opentype"); /* url of the font */
-}
-
-@font-face {
-    font-family: Ppeditorialnew-Ultralight; /* set name */
-    src: url(fonts/PPEditorialNew-Ultralight.otf) format("opentype"); /* url of the font */
-}
-
-* {
-    padding: 0;
-    margin: 0;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -45,7 +15,7 @@ html {
     justify-content: space-between;
     flex-direction: row;
     background-color: cornflowerblue;
-    font-family: 'Ppeditorialnew', serif;
+    font-family: 'Old Standard TT', serif;
     padding: 0 2vh;
 
 }
@@ -71,7 +41,7 @@ html {
     justify-content: center;
     flex-direction: row;
     height: 100vh;
-    background-image: url("imgs/6762696f-5b95-48dd-b5db-c36bd794efd7.png");
+    background-image: url("woman-1.png");
     background-size: cover;
 
 }
@@ -86,7 +56,7 @@ html {
     align-items: center;
     justify-content: center;
     color: white;
-    font-family: 'Ppeditorialnew-Ultralight', serif;
+    font-family: 'Old Standard TT', serif;
     font-size: 5vh;
 }
 
