@@ -1,274 +1,281 @@
-html {
-    scroll-behavior: smooth;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Old Standard TT', serif;
 }
 
-/* Header styling */
-
-.logo img {
-    width: 5vh;
-    height: auto;
-}
-
-.header {
+/* ---------------- HEADER ---------------- */
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
-    background-color: cornflowerblue;
-    font-family: 'Old Standard TT', serif;
-    padding: 0 2vh;
-
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    transition: background 0.3s ease;
 }
+
+.navbar.scrolled {
+    background-color: #445E93;
+    color: white;
+}
+
+.femtech-small-logo img {
+    width: 4.5rem;
+    height: auto;
+    padding-left: 3rem;
+}
+
 .nav-bar ul {
+    display: flex;
+    gap: 5rem;
     list-style: none;
-    display: flex;
-    gap: 5vh
-}
-.kom-igang {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-
 }
 
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
 
-/* HERO section styling */
+.nav-bar a:hover {
+    font-size: 1.1rem;
+}
+.button-getStarted{
+    padding-right: 3rem;
+}
 
-.hero-section-container {
+.button-getStarted button {
+    background-color: white;
+    border: none;
+    padding: 0.3rem 1rem;
+    border-radius: 10rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #D90368;
+}
+
+.button-getStarted button:hover {
+    background-color: lightgray;
+}
+
+
+/* ---------------- FORSIDE ---------------- */
+
+.frontpage {
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: row;
-    height: 100vh;
-    background-image: url("woman-1.png");
+    align-items: center;
+    flex-direction: column;
+    height: 63rem;
+    background-image: url("imgs/womenTech.jpg");
     background-size: cover;
+    background-position: center;
+}
+
+.button-getStarted-frontpage button {
+    background-color: white;
+    color: #D90368;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+    font-size: 1.5rem;
+    cursor: pointer;
 
 }
 
-.hero-logo img {
-    width: 50vh;
+.button-getStarted-frontpage button:hover {
+    background-color: lightgray;
+}
+
+
+.femtech-big-logo img {
+    width: 25rem;
     height: auto;
 }
 
-.hero-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* ---------------- ROLLEMODELLER OVERSIGT ---------------- */
+
+.role-model-section {
+    background-color: #D90368;
+    text-align: center;
+    padding: 5rem 0;
     color: white;
-    font-family: 'Old Standard TT', serif;
-    font-size: 5vh;
 }
 
-/* Section 1 styling */
-
-.first-section {
-    background-color: lightgreen;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+.role-model-titel {
+    font-size: 6rem;
 }
 
-.overskrift-for-section {
+.role-model-list {
+    list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 10vh;
-    font-family: 'Old Standard TT', serif;
+    gap: 5rem;
+    padding: 0;
 }
 
-.role-model-links {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: row;
-}
-
-.role-model-links .overskrift-for-section {
+.role-model-list li {
+    width: 15rem;
     text-align: center;
 }
 
-.role-model-links ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8rem;
-    list-style: none;
-    width: auto;
-}
-
-.role-model-links img {
-    width: 20vh;
+.role-model-list img {
+    width: 13rem;
     height: auto;
-    border-radius: 20rem;
-    border-style: groove;
-    border-color: lightpink;
+    border-radius: 50%;
+    border: 5px groove lightpink;
 }
 
-.role-model-images {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.role-model-images p {
-    width: 20vh;
-    font-family: 'Old Standard TT', serif;
-}
-
-.role-model-images p .full-name {
+.full-name {
     font-weight: bold;
-    font-size: large;
-    font-family: 'Old Standard TT', serif;
+    font-size: 1rem;
 }
 
-/* Section 2 styling */
+
+/* ---------------- KNAPPER TIL GRAF ---------------- */
 
 .second-section {
+    background-color: white;
+    padding: 8rem 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: lightpink;
-    padding-bottom: 10rem;
-    padding-top: 10rem;
 }
-
-.buttons button {
-    background-color: cornflowerblue;
-    color: white;
-    border: none;
-    border-radius: 20vh;
-    font-size: 10vh;
-    padding: 2vh;
-    margin: 2vh;
-
-}
-
-.buttons button:hover {
-    background-color: lightskyblue;
-
-}
-
-.buttons ul {
+.buttons {
     list-style: none;
+    display: flex;
+    gap: 4rem;
     padding: 0;
     margin: 0;
 }
 
-/* Section 3 styling */
+.buttons button {
+    background-color: #7EB2DD;
+    color: white;
+    border: none;
+    border-radius: 8rem;
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #445E93;
+}
+
+
+/* ---------------- ROLLEMODEL SEKTIONER ---------------- */
+
+.role-model {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8vh;
+    padding: 10vh;
+}
+
+.role-model img {
+    width: 40vh;
+    height: auto;
+    border-radius: 50%;
+}
+
+.role-model p {
+    font-size: 3vh;
+}
+
+
+/* --- Individuelle farver --- */
 
 .third-section {
-    background-color: lightgreen;
-}
-
-.first-role-model {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: lightgreen;
-    padding: 20vh;
-}
-
-.first-role-model img {
-    width: 60vh;
-    height: auto;
-    border-radius: 20rem;
-    border-style: groove;
-    border-color: lightpink;
-}
-
-.first-role-model p {
-    font-family: 'Old Standard TT', serif;
-    font-size: 4vh;
+    background-color: #D90368;
     color: white;
 }
-
-/* Section 4 styling */
 
 .fourth-section {
-    background-color: beige;
+    background-color: white;
+    color: #D90368;
 }
-
-.second-role-model {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: beige;
-    padding: 20vh;
-}
-
-.second-role-model img {
-    width: 60vh;
-    height: auto;
-    border-radius: 20rem;
-    border-style: groove;
-    border-color: lightpink;
-}
-
-.second-role-model p {
-    font-family: 'Old Standard TT', serif;
-    font-size: 4vh;
-    color: black;
-}
-
-/* Section 5 styling */
 
 .fifth-section {
-    background-color: lightpink;
-}
-
-.third-role-model {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: lightpink;
-    padding: 20vh;
-}
-
-.third-role-model img {
-    width: 60vh;
-    height: auto;
-    border-radius: 20rem;
-    border-style: groove;
-    border-color: lightpink;
-}
-
-.third-role-model p {
-    font-family: 'Old Standard TT', serif;
-    font-size: 4vh;
+    background-color: #D90368;
     color: white;
 }
 
-/* Section 6 styling */
-
 .sixth-section {
-    background-color: cadetblue;
+    background-color: white;
+    color: #D90368;
 }
 
-.fourth-role-model {
+/* ------ Footer ------ */
+footer {
+    background-color: #445E93;
+    color: white;
+    padding: 1rem;
+    font-weight: 350;
+}
 
+.footer-top {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: cornflowerblue;
-    padding: 20vh;
+    justify-content: space-between;
+    padding-top: 3rem;
 }
 
-.fourth-role-model img {
-    width: 60vh;
-    height: auto;
-    border-radius: 20rem;
-    border-style: groove;
-    border-color: lightpink;
+.footer-top-left {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.fourth-role-model p {
-    font-family: 'Old Standard TT', serif;
-    font-size: 4vh;
-    color: black;
+.SIGNUP {
+    border: 0.09rem solid white;
+    text-align: center;
+    padding: 0.6rem;
+    width: 20rem;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.SIGNUP:hover {
+    background-color: #7EB2DD;
+    border-color: #7EB2DD;
+}
+
+.all-list {
+    display: flex;
+    gap: 1rem;
+    width: 60rem;
+    justify-content: space-evenly;
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding-right: 2.5rem;
+}
+
+.all-list ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.all-list li:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 13.5rem;
+}
+
+.footer-bottom-left {
+    color: #7EB2DD;
+    font-size: 0.6rem;
+}
+
+.footer-bottom-right {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.9rem;
 }
