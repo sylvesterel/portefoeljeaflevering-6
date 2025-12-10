@@ -37,6 +37,8 @@ app.get("/data/chart1", async (req, res) => {
     res.send(update)
 });
 
+
+
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 })
