@@ -68,7 +68,7 @@
     justify-content: center;
     flex-direction: row;
     height: 100vh;
-    background-image: url("imgs/mission-hero-image.png");
+    background-image: url("imgs/hero-image.jpg");
     background-size: cover;
 }
 
