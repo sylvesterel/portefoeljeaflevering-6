@@ -44,6 +44,17 @@ app.get("/events", async (req, res) => {
 });
 
 
+app.get("/data/chart2", async (req, res) => {
+    const [update] = await pool.execute(`SELECT * FROM school_growth`)
+    res.send(update)
+});
+
+
+app.get("/data/chart3", async (req, res) => {
+    const [update] = await pool.execute(`SELECT * FROM ek_kvalitet WHERE INSTITUTIONS_KATEGORI = 'IT & Digital' AND Køn = 'Kvinde'`)
+    res.send(update)
+});
+
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 })
