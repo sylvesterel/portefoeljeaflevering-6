@@ -39,6 +39,10 @@
 
         }
 
+        .our-event {
+            background-color: #0078A8;
+        }
+
 
 
     </style>
@@ -122,23 +126,26 @@
             const myArray = dbDate.split("T");
             const dateForSite = myArray[0];
 
-            const isOurs = event.isOurs == 1
+
+            const isOurs = event.is_ours === 1
 
             console.log(event)
 
             if (isOurs) {
 
                 const tr = document.createElement('tr');
+                tr.classList.add("our-event")
                 tr.innerHTML = `
             <td>${dateForSite}</td>
             <td>${event.time}</td>
             <td>${event.title}</td>
             <td>${event.place}</td>
-            <td><a href="#">${event.registration}</a></td>
+            <td><a>${event.registration}</a></td>
         `;
                 tbody.appendChild(tr);
             } else {
                 const tr = document.createElement('tr');
+                tr.classList.add("guest-event")
                 tr.innerHTML = `
             <td>${dateForSite}</td>
             <td>${event.time}</td>
