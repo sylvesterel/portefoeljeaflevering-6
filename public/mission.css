@@ -1,32 +1,58 @@
-/* Header styling */
-
-.logo img {
-    width: 5vh;
-    height: auto;
-}
-
-.header {
+/* ---------------- HEADER ---------------- */
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
-    background-color: cornflowerblue;
-    font-family: 'Old Standard TT', serif;
-    padding: 0 2vh;
-
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    transition: background 0.3s ease;
 }
+
+.navbar.scrolled {
+    background-color: #C7B7A3;
+    color: white;
+}
+
+.femtech-small-logo img {
+    width: 4.5rem;
+    height: auto;
+    padding-left: 3rem;
+}
+
 .nav-bar ul {
+    display: flex;
+    gap: 5rem;
     list-style: none;
-    display: flex;
-    gap: 5vh
 }
-.kom-igang {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
 
-
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
 }
+
+.nav-bar a:hover {
+    font-size: 1.1rem;
+}
+.button-getStarted{
+    padding-right: 3rem;
+}
+
+.button-getStarted button {
+    background-color: white;
+    border: none;
+    padding: 0.3rem 1rem;
+    border-radius: 10rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #D90368;
+}
+
+.button-getStarted button:hover {
+    background-color: lightgray;
+}
+
 
 /* Forside styling */
 
@@ -36,7 +62,7 @@
     justify-content: center;
     flex-direction: row;
     height: 100vh;
-    background-image: url("mission-hero-image.png");
+    background-image: url("imgs/mission-hero-image.png");
     background-size: cover;
 }
 
