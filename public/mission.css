@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Old Standard TT', serif;
+}
+
 /* ---------------- HEADER ---------------- */
 .navbar {
     display: flex;
@@ -7,15 +13,17 @@
     width: 100%;
     background: transparent;
     transition: background 0.3s ease;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .navbar.scrolled {
-    background-color: #C7B7A3;
+    background-color: #D90368;
     color: white;
 }
-
+/* #C7B7A3 */
 .femtech-small-logo img {
-    width: 4.5rem;
+    width: 8rem;
     height: auto;
     padding-left: 3rem;
 }
@@ -52,8 +60,6 @@
 .button-getStarted button:hover {
     background-color: lightgray;
 }
-
-
 /* Forside styling */
 
 .hero-section-container {
