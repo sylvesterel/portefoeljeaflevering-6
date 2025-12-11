@@ -124,7 +124,7 @@
     width: 13rem;
     height: auto;
     border-radius: 50%;
-    border: 5px groove lightpink;
+    border: none;
 }
 
 .full-name {
