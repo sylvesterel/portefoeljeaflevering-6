@@ -16,7 +16,7 @@
 }
 
 .navbar.scrolled {
-    background-color: #445E93;
+    background-color: #C7B7A3;
     color: white;
 }
 
@@ -68,7 +68,7 @@
     align-items: center;
     flex-direction: column;
     height: 63rem;
-    background-image: url("imgs/womenTech.jpg");
+    background-image: url("imgs/59B30492-3C51-40CE-83D0-42729AACF2D4.jpg");
     background-size: cover;
     background-position: center;
 }
