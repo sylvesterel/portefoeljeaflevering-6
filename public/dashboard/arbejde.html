@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="leaflet/leaflet.css" />
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+          rel="stylesheet">
+    <script src="leaflet/leaflet.js"></script>
+</head>
+<body>
+    <header class="side-nav-container">
+        <div class="side-nav-wrapper">
+            <div class="side-nav-login">
+                <img id="login-photo" src="imgs/img.png">
+                <p>Velkommen tilbage</p>
+                <h1>Sofie Frederiksen</h1>
+            </div>
+            <div class="side-nav-items">
+                <a><h1 id="nav-selected"> > Arbejde</h1></a>
+                <a href="uddannelse.html"><h1>Uddannelse</h1></a>
+                <a href="profil.html"><h1>Min profil</h1></a>
+                <h1>Indstillinger</h1>
+                <h1>Log ud</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="main-wrapper">
+            <div class="dashboard-header">
+                <h1>Arbejde</h1>
+            </div>
+            <div class="dashboard-grid">
+                <div class="grid-box-design box-large">
+                    <div class="grid-chart-box">
+                        <h1>IT Arbejdspladser i Danmark</h1>
+                        <div class="grid-line"></div>
+                        <div id="map" style="height: 500px;z-index: 100;"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script src="leaflet/kort.js"></script>
+</body>
+</html>
