@@ -50,10 +50,7 @@ async function renderChart1(){
                 }
             },
             layout:{
-                padding: {
-                    right: 800,
-                    left: 50
-                }
+
             }
         }
 
@@ -104,10 +101,7 @@ async function renderChart2(){
                 }
             },
             layout:{
-                padding: {
-                    right: 800,
-                    left: 50
-                }
+
             }
         }
 
