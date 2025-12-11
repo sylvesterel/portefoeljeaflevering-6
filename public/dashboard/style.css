@@ -104,15 +104,6 @@ a {
                         font-weight: 300;
                         font-size: 1.5rem;
                     }
-                    ol {
-                        margin-left: 10px;
-                        li {
-                            margin-bottom: 5px;
-                        }
-                        li:hover {
-                            font-weight: 500;
-                        }
-                    }
                 }
                 .grid-chart-box {
                     display: flex;
@@ -138,6 +129,17 @@ a {
                         font-size: 4.5rem;
                         margin-top: 5px;
                         text-align: center;
+                    }
+                }
+                .grid-two-column {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    ol {
+                        li {
+                            margin-bottom: 5px;
+                            list-style-type: none;
+                        }
                     }
                 }
 
