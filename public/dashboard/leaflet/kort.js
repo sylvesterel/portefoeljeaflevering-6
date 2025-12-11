@@ -1,4 +1,4 @@
-const map = L.map('map'); //Import map fra index. Leaflet er importet i index.html.
+const map = L.map('map'); //Import map fra index. Leaflet er importet i uddannelse.html.
 
 // Sætter Danmarks grænser for ikke at se resten af verdens kortet
 
@@ -12,11 +12,11 @@ const denmarkBounds = [
 map.setMaxBounds(denmarkBounds);
 map.fitBounds(denmarkBounds);
 
-map.getContainer().style.backgroundColor = '#0e1628';
+map.getContainer().style.backgroundColor = '#f4f4f4';
 
 
 async function fetchDataToList() {
-    countryPartsRespones = await fetch('./leaflet/landsdel.geojson');
+    countryPartsRespones = await fetch('leaflet/landsdel.geojson');
     listOfCountryParts = await countryPartsRespones.json();
 
     return true;
