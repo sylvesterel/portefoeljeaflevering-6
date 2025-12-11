@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Events</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Header styling */
+
+        .logo img {
+            width: 5vh;
+            height: auto;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            background-color: #445E93;
+            font-family: 'Old Standard TT', serif;
+            padding: 0 2vh;
+
+        }
+        .nav-bar ul {
+            list-style: none;
+            display: flex;
+            gap: 5vh
+        }
+        .kom-igang {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+          rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+
+<!-- Header -->
+
+<header class="header">
+    <div class="logo">
+        <img src="imgs/logo.png">
+    </div>
+
+    <div class="nav-bar">
+        <ul>
+            <li>
+                <a href="">Mission</a>
+            </li>
+
+            <li>
+                <a href="">Rollemodeller</a>
+            </li>
+
+            <li>
+                <a href="">Data</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="kom-igang">
+        <button onclick="true">Kom igang</button>
+    </div>
+</header>
+
+
+<table class="events-table">
+    <thead>
+    <tr>
+        <th>Dato</th>
+        <th>Tidspunkt</th>
+        <th>Titel</th>
+        <th>Sted</th>
+        <th>Tilmelding</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+
+
+
+<script>
+    async function loadEvents() {
+        const response = await fetch('/events');
+        const events = await response.json();
+        console.log(events);
+
+        const tbody = document.querySelector('.events-table tbody');
+        tbody.innerHTML = "";
+
+        events[0].forEach(event => {
+            const dbDate = event.date;
+            const myArray = dbDate.split("T");
+            const dateForSite = myArray[0];
+
+            const isOurs = event.isOurs == 1
+
+            console.log(event)
+
+            if (isOurs) {
+
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+            <td>${dateForSite}</td>
+            <td>${event.time}</td>
+            <td>${event.title}</td>
+            <td>${event.place}</td>
+            <td><a href="#">${event.registration}</a></td>
+        `;
+                tbody.appendChild(tr);
+            } else {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+            <td>${dateForSite}</td>
+            <td>${event.time}</td>
+            <td>${event.title}</td>
+            <td>${event.place}</td>
+            <td><a href="#">${event.registration}</a></td>
+        `;
+                tbody.appendChild(tr)
+            }
+        })
+    }
+
+    loadEvents()
+
+</script>
+
+</body>
+
+</html>
