@@ -1,5 +1,4 @@
 async function fetchData(endpoint) {
-
     const response = await fetch(endpoint, {
         method: 'GET',
         headers: {
@@ -10,32 +9,32 @@ async function fetchData(endpoint) {
     return data
 }
 
-let yearArray = []
-let employedWomenArray = []
+let yearArrayChart1 = []
+let employedWomenArrayChart1 = []
 
 async function pushDataToArrayChart1 () {
     const data = await fetchData('/data/chart1')
 
     data.forEach(year => {
-        yearArray.push(year.year)
-        employedWomenArray.push(year.employed_women)
+        yearArrayChart1.push(year.year)
+        employedWomenArrayChart1.push(year.employed_women)
     })
 }
 
 
 
-async function renderChart(){
+async function renderChart1(){
     await pushDataToArrayChart1()
-    console.log(yearArray)
-    console.log(employedWomenArray)
+    console.log(yearArrayChart1)
+    console.log(employedWomenArrayChart1)
     const ctx = document.querySelector('#chart1').getContext('2d');
     const chart1 = new Chart(ctx, {
         type: 'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
         data: {
-            labels: yearArray,
+            labels: yearArrayChart1,
             datasets: [{
                 label: 'Kvinder ansat i IT-Branchen',
-                data: employedWomenArray,
+                data: employedWomenArrayChart1,
                 backgroundColor:'#D8D8D8'
             }]
         },
@@ -61,4 +60,113 @@ async function renderChart(){
     });
 }
 
-renderChart()
+renderChart1()
+
+
+let yearArrayChart2 = []
+let enrolledWomenChart2 = []
+
+async function pushDataToArrayChart2 () {
+    const data = await fetchData('/data/chart2')
+
+    data.forEach(year => {
+        yearArrayChart2.push(year.year)
+        enrolledWomenChart2.push(year.enrolled_women_to_stem_education)
+    })
+}
+
+
+
+async function renderChart2(){
+    await pushDataToArrayChart2()
+    console.log(yearArrayChart2)
+    console.log(enrolledWomenChart2)
+    const ctx = document.querySelector('#chart2').getContext('2d');
+    const chart2 = new Chart(ctx, {
+        type: 'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+        data: {
+            labels: yearArrayChart2,
+            datasets: [{
+                label: 'Kvinder optaget på STEM uddannelser',
+                data: enrolledWomenChart2,
+                backgroundColor:'#D8D8D8'
+            }]
+        },
+        options: {
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Kvinder optaget på STEM uddannelser'
+                },
+                legend: {
+                    display: true,
+                    position: 'bottom'
+                }
+            },
+            layout:{
+                padding: {
+                    right: 800,
+                    left: 50
+                }
+            }
+        }
+
+    });
+}
+
+renderChart2()
+
+
+
+let yearArrayChart3 = []
+let enrolledWomenChart3 = []
+
+async function pushDataToArrayChart3 () {
+    const data = await fetchData('/data/chart3')
+
+    data.forEach(year => {
+        yearArrayChart2.push(year.year)
+        enrolledWomenChart2.push(year.enrolled_women_to_stem_education)
+    })
+}
+
+
+
+async function renderChart3(){
+    await pushDataToArrayChart3()
+    console.log(yearArrayChart2)
+    console.log(enrolledWomenChart2)
+    const ctx = document.querySelector('#chart2').getContext('2d');
+    const chart2 = new Chart(ctx, {
+        type: 'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+        data: {
+            labels: yearArrayChart2,
+            datasets: [{
+                label: 'Kvinder optaget på STEM uddannelser',
+                data: enrolledWomenChart2,
+                backgroundColor:'#D8D8D8'
+            }]
+        },
+        options: {
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Kvinder optaget på STEM uddannelser'
+                },
+                legend: {
+                    display: true,
+                    position: 'bottom'
+                }
+            },
+            layout:{
+                padding: {
+                    right: 800,
+                    left: 50
+                }
+            }
+        }
+
+    });
+}
+
+renderChart3()
