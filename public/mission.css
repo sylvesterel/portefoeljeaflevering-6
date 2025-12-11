@@ -75,16 +75,17 @@
 .hero-text {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     color: white;
     font-family: 'Old Standard TT', serif;
     font-size: 10vh;
+    padding-right: 70vh;
 }
 
 /* Mission text section */
 
 .mission-section {
-    background-color: beige;
+    background-color: #beige;
 }
 
 .mission-text p {
@@ -99,6 +100,8 @@
 
 /* Image carrousel section */
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -112,8 +115,8 @@
     width: 350px;
     height: auto;
     display: flex;
-    flex-direction: column;
-    background: beige;
+    flex-direction: row;
+    background: #D90368;
     border-radius: 20px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
@@ -139,13 +142,13 @@
     position: absolute;
     left: 25px;
     top: 25px;
-    color: #EFEFFF;
+    color: white;
     border-radius: 30px;
     font-weight: 600;
     font-size: 0.75rem;
     padding: 5px 15px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.5vh;
     background: lightcoral;
 }
 
@@ -193,7 +196,7 @@
     margin-right: 10px;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px #D90368;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
 }
