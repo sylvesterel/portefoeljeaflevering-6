@@ -39,11 +39,6 @@ app.get("/data/chart1", async (req, res) => {
 
 
 
-app.get("/events", async (req, res) => {
-    const data = await pool.execute(`SELECT * FROM events`)
-    res.send(data)
-});
-
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 })
