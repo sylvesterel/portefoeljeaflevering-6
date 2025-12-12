@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Events</title>
+    <title>Events - FemTech</title>
+
 
     <!-- Styles -->
 
@@ -22,81 +23,223 @@
             justify-content: space-between;
             position: fixed;
             width: 100%;
-            background: #D90368;
+            background-color: #D90368;
+            transition: background 0.3s ease;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+
+        .femtech-small-logo img {
+            width: 8rem;
+            height: auto;
+            padding-left: 3rem;
+        }
+
+        .nav-bar ul {
+            display: flex;
+            gap: 5rem;
+            list-style: none;
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .nav-bar a:hover {
+            font-size: 1.1rem;
+        }
+        .button-getStarted{
+            padding-right: 3rem;
+        }
+
+        .button-getStarted button {
+            background-color: white;
+            border: none;
+            padding: 0.3rem 1rem;
+            border-radius: 10rem;
+            font-size: 1rem;
+            cursor: pointer;
+            color: #D90368;
+        }
+
+        .button-getStarted button:hover {
+            background-color: lightgray;
         }
 
 
-    .femtech-small-logo img {
-        width: 4.5rem;
-        height: auto;
-        padding-left: 3rem;
-    }
-
-    .nav-bar ul {
-        display: flex;
-        gap: 5rem;
-        list-style: none;
-    }
-
-    .nav-bar a {
-        text-decoration: none;
-        color: white;
-        font-size: 1rem;
-    }
-
-    .nav-bar a:hover {
-        font-size: 1.1rem;
-    }
-    .button-getStarted{
-        padding-right: 3rem;
-    }
-
-    .button-getStarted button {
-        background-color: white;
-        border: none;
-        padding: 0.3rem 1rem;
-        border-radius: 10rem;
-        font-size: 1rem;
-        cursor: pointer;
-        color: #D90368;
-    }
-
-    .button-getStarted button:hover {
-        background-color: lightgray;
-    }
-
-    /* ---------------- UNDER HEADER ---------------- */
-
-    .under-header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 63rem;
-        background-size: cover;
-        background-position: center;
-        background-color: white;
-    }
-
-    /* ---------------- TABLE ---------------- */
-
-        tr {
-            background-color: #ffe294;
+        /* ---------------- UNDER HEADER ---------------- */
+        .under-header {
+            padding-top: 5rem;
+            padding-bottom: 6rem;
+            color: #4A3A32;
         }
 
-    .our-event {
-        background-color: #fff4db;
+        .under-header h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            padding: 0.5rem 1.5rem;
+            border-radius: 0.5rem;
         }
 
-    .guest-event {
-        background-color: #fff0ca;
-    }
-
-    td {
-        margin-top: 20%;
-    }
 
 
+        /* -------- EVENTS OVERVIEW SECTION -------- */
+
+        .events-overview {
+            width: 80%;
+            margin: 5rem auto;
+            padding: 3rem;
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 8px 25px #bfaf9b;
+        }
+
+        .events-overview  p{
+            font-size: 1.2rem ;
+            line-height: 1.6;
+        }
+
+
+
+        /* ---------- LIST STYLING ---------- */
+
+        .events-list {
+            list-style: disc;
+            padding-left: 2rem;
+            font-size: 1.2rem;
+            color: #4A3A32;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .events-list li {
+            line-height: 1.5;
+        }
+
+        .events-list strong {
+            color: #D90368;
+            font-size: 1.25rem;
+        }
+
+
+        /* ---------- TABEL ---------- */
+        .events-table {
+            width: 80%;
+            margin: 4% auto;
+            border-collapse: collapse;
+            box-shadow: 0 8px 25px #bfaf9b;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .events-table th {
+            background-color: #D90368;
+            color: white;
+            padding: 1.2rem;
+            font-size: 1.1rem;
+            letter-spacing: 0.4px;
+        }
+
+        .events-table td {
+            padding: 1rem;
+        }
+
+        /* vores events */
+        .our-event {
+            background-color: #FFEDE1;
+        }
+
+        /* gæste events */
+        .guest-event {
+            background-color: #FFF7EB;
+        }
+
+        .events-table a {
+            color: #D90368;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .events-table a:hover {
+            text-decoration: underline;
+        }
+
+        /* ------ Footer ------ */
+        footer {
+            background-color: #e14182;
+            color: white;
+            padding: 1rem;
+            font-weight: 350;
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 3rem;
+        }
+
+        .footer-top-left {
+            width: 20rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .SIGNUP {
+            border: 0.09rem solid white;
+            text-align: center;
+            padding: 0.6rem;
+            width: 20rem;
+            font-weight: 300;
+            font-size: 0.9rem;
+        }
+
+        .SIGNUP:hover {
+            background-color: #D90368;
+            border-color: white;
+        }
+
+        .all-list {
+            display: flex;
+            gap: 1rem;
+            width: 60rem;
+            justify-content: space-evenly;
+            font-size: 0.9rem;
+            font-weight: 300;
+            padding-right: 2.5rem;
+        }
+
+        .all-list ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .all-list li:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 13.5rem;
+        }
+
+        .footer-bottom-left {
+            color: white;
+            font-size: 0.6rem;
+        }
+
+        .footer-bottom-right {
+            display: flex;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
 
     </style>
 
@@ -108,14 +251,15 @@
 <!-- Header -->
 <header class="navbar">
     <div class="femtech-small-logo">
-        <img src="imgs/Small-Logo.png" alt="Femtech-logo">
+        <a href="index.html">
+            <img src="imgs/Small-Logo.png" alt="Femtech-logo">
+        </a>
     </div>
 
     <div class="nav-bar">
         <ul>
-            <li><a href="http://localhost:63342/portefoeljeaflevering-6/public/index.html?_ijt=8229t3qtit727oft4svgr9m261&_ij_reload=RELOAD_ON_SAVE">Hjem</a></li>
-            <li><a href="">Mission</a></li>
-            <li><a href="http://localhost:63342/portefoeljeaflevering-6/public/rolemodel.html?_ijt=4nl387q3b7kvr4nvv7eah830t4&_ij_reload=RELOAD_ON_SAVE">Rollemodeller</a></li>
+            <li><a href="mission.html">Mission</a></li>
+            <li><a href="rolemodel.html">Rollemodeller</a></li>
             <li><a href="">Data</a></li>
             <li><a href="">Events</a></li>
         </ul>
@@ -128,8 +272,42 @@
 
 <section class="under-header">
 
+    <section class="events-overview">
+    
+    <section class="info">
+    
+    <h2>
+    Vores events
+    </h2>
+    <p>
+        FemTech arrangerer løbende faglige events, hvor du kan styrke dine kompetencer inden for tech, data og digital innovation. <br>
+        Gennem workshops, talks og netværksarrangementer gør vi det lettere at tage det næste skridt i din karriere – hvad end du er studerende, ny i branchen eller erfaren specialist. <br>
+        <br>
+        Du kan blandt andet deltage i:
+        <ul class="events-list">
+            <li>
+                <strong>Introaftener</strong> – perfekt som første skridt, hvis du vil lære FemTech at kende.
+            </li>
 
+            <li>
+                <strong>Workshops</strong> – hands-on sessioner, hvor du prøver kræfter med alt fra design til kodning.
+            </li>
 
+            <li>
+                <strong>Talks og paneler</strong> – få indblik i tech-branchen fra stærke stemmer og rollemodeller.
+            </li>
+
+            <li>
+                <strong>Sociale events</strong> – hyggelige aftener, hvor vi netværker og møder nye mennesker.
+            </li>
+        </ul>
+        
+    </section>
+        
+        <img src="woman-2.png"> </img>
+
+    </section>
+    
 <table class="events-table">
     <thead>
     <tr>
@@ -147,6 +325,51 @@
 
 
 </section>
+
+
+<footer>
+    <div class="footer-top">
+        <div class="footer-top-left">
+            <p>Tilmeld dig vores nyhedsbrev Få adgang til specialtilbud, unikke samarbejder og eksklusive events.</p>
+            <p class="SIGNUP">SIGN UP</p>
+        </div>
+        <div class="all-list">
+
+            <div class="second-list">
+                <ul>
+                    <li>Om os</li>
+                    <li>Job</li>
+                    <li>Virksomhedsinfo</li>
+                    <li>Bæredygtighed</li>
+                </ul>
+            </div>
+            <div class="third-list">
+                <ul class="foot">
+                    <li>Instagram</li>
+                    <li>TikTok</li>
+                    <li>Facebook</li>
+                    <li>Pinterest</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-left">
+            <p>© 2025 Mathilde Pedersen, Johanne Schledermann Jeilsø, Noah Larsen, Rosalina Kjærgaard og Sylvester Ledet</p>
+        </div>
+
+        <div class="footer-bottom-right">
+            <svg width="17" height="17" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                      d="M12.75 1.5a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5Zm7.341 6a8.29 8.29 0 0 0-4.58-4.014 14.836 14.836 0 0 1 1.43 4.014h3.15Zm.873 4.492c.024-.246.036-.494.036-.742A8.195 8.195 0 0 0 20.68 9h-3.512c.047.496.082.996.082 1.5a15.17 15.17 0 0 1-.309 3h3.74c.142-.493.236-.998.284-1.508h-.001Zm-5.302 0 .008-.076c.052-.47.078-.943.08-1.416a13.49 13.49 0 0 0-.114-1.5H9.864a13.23 13.23 0 0 0-.114 1.5c.004 1.01.12 2.016.35 3h5.3c.116-.498.203-1 .261-1.508ZM15.373 7.5a13.461 13.461 0 0 0-1.882-4.455C13.245 3.024 12.999 3 12.75 3c-.156 0-.312.008-.468.022l-.273.023L12 3.06a13.455 13.455 0 0 0-1.873 4.44h5.246Zm-6.814 0a14.939 14.939 0 0 1 1.449-4.021A8.29 8.29 0 0 0 5.409 7.5h3.15ZM4.819 9a8.22 8.22 0 0 0-.319 2.25 8.22 8.22 0 0 0 .32 2.25h3.739a15.025 15.025 0 0 1-.309-3c0-.504.034-1.004.082-1.5H4.82Zm4.131 6H5.41a8.272 8.272 0 0 0 5.729 4.34A15.035 15.035 0 0 1 8.951 15Zm3.8 3.966A13.412 13.412 0 0 0 14.967 15h-4.434a13.415 13.415 0 0 0 2.217 3.966ZM16.55 15a15.035 15.035 0 0 1-2.189 4.34A8.274 8.274 0 0 0 20.09 15h-3.54Z"
+                      clip-rule="evenodd"></path>
+            </svg> <!-- Globe Logo taget fra hjemmesiden: https://iconer.app/codicons/ -->
+            <p>DENMARK | DANSK</p>
+        </div>
+    </div>
+</footer>
 
 <script>
     async function loadEvents() {
