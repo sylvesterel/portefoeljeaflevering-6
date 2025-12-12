@@ -95,8 +95,8 @@
 }
 
 /* ---- KeyNumber carrousel ---- */
-}
 
+}
 .wrapper .card {
     width: 350px;
     height: auto;
@@ -112,17 +112,11 @@
     transform: translateY(-10px);
 }
 
-/* .card .card-image {
-    position: relative;
-}
- */
-
 .card .card-key-numbers div {
     position: relative;
     display: flex;
     justify-content: center;
     font-size: 30vh;
-    font-family: Ppeditorialnew-Ultralight;
     color: white;
     background-color: deeppink;
     padding-top: 5vh;
