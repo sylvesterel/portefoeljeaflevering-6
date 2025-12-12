@@ -1,0 +1,24 @@
+@font-face {
+    font-family: Ppeditorialnew; /* set name */
+    src: url(fonts/PPEditorialNew-Regular.otf); /* url of the font */
+}
+
+@font-face {
+    font-family: Ppeditorialnew-Ultralight; /* set name */
+    src: url(fonts/PPEditorialNew-Ultralight.otf); /* url of the font */
+}
+
+@font-face {
+    font-family: Ppeditorialnew-UltraboldItalic; /* set name */
+    src: url(fonts/PPEditorialNew-UltraboldItalic.otf); /* url of the font */
+}
+
+@font-face {
+    font-family: Ppeditorialnew-Italic; /* set name */
+    src: url(fonts/PPEditorialNew-Italic.otf); /* url of the font */
+}
+
+@font-face {
+    font-family: Ppeditorialnew-Ultrabold; /* set name */
+    src: url(fonts/PPEditorialNew-Ultrabold.otf); /* url of the font */
+}
