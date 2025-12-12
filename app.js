@@ -59,6 +59,18 @@ app.get("/data/chart3", async (req, res) => {
     res.send(update)
 });
 
+app.get("/jobs/:year", async (req, res) => {
+    const year = req.params.year
+    const query = `SELECT navn, \`${year}\` FROM erhverv_pr_landsdel`;
+    try {
+        const [data] = await pool.query(query)
+        res.send(data)
+    } catch {
+        res.send(`Årstalet ${year} findes ikke i SQL`).status(404)
+    }
+
+});
+
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 })
