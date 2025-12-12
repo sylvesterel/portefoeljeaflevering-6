@@ -99,6 +99,8 @@ async function displayCountryParts() {
 
     }).addTo(map);
 
+    map.setZoom(6)
+
 }
 
 displayCountryParts();
