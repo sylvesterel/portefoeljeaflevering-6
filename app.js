@@ -51,10 +51,15 @@ app.get("/data/chart2", async (req, res) => {
 
 
 app.get("/data/chart3", async (req, res) => {
-    const [update] = await pool.execute(`SELECT * FROM ek_kvalitet WHERE INSTITUTIONS_KATEGORI = 'IT & Digital' AND Køn = 'Kvinde'`)
+    const [update] = await pool.execute(`SELECT
+                                             COUNT(CASE WHEN Køn = 'Kvinde' THEN 1 END) AS Kvinder,
+                                             COUNT(CASE WHEN Køn = 'Mand' THEN 1 END) AS Mænd
+                                         FROM ek_kvalitet
+                                         WHERE INSTITUTIONS_KATEGORI = 'IT & Digital'`)
     res.send(update)
 });
 
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 })
+
