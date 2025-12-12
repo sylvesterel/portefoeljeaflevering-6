@@ -160,7 +160,7 @@ async function renderChart3(){
             labels: labelArrayForChart3,
             datasets: [{
                 data: dataArrayForChart3,
-                backgroundColor: '#D90368'
+                backgroundColor: ['#D90368', '#D9036880']
             }]
         },
         options: {
