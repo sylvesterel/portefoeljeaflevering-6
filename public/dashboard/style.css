@@ -2,12 +2,13 @@
     padding: 0;
     margin: 0;
     font-family: Montserrat;
-
+    box-sizing: border-box;
 }
 
-body {
+html, body {
     background: #e7e7e7;
     overflow: hidden;
+    height: 100%;
 }
 
 a {
@@ -22,8 +23,8 @@ a {
     color: white;
     z-index: 5;
     background: #445E93;
-    height: 100vh;
-    width: 300px;
+    height: 100%;
+    width: 400px;
     padding: 100px 50px;
     .side-nav-wrapper {
         display: flex;
@@ -62,29 +63,33 @@ a {
 .main-container {
     background: #e7e7e7;
     margin-left: 400px;
-    padding: 35px 25px 10px 25px;
+    padding: 25px 25px 25px 25px;
+    height: calc(100vh - 50px);
+    max-height: 100vh;
     .main-wrapper {
-
         display: flex;
         flex-direction: column;
         gap: 10px;
+        max-height: 100%;
         .dashboard-header {
             font-size: 1.8rem;
+            flex-shrink: 0;
             text-align: center;
             h1 { font-weight: 400; }
         }
 
         .dashboard-grid {
             display: grid;
-            padding: 25px;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
+            align-content: start;
+            padding: 25px;
             gap: 25px;
 
             .grid-box-design {
                 background: #f4f4f4;
                 padding: 20px;
-                min-height: 275px;
+                min-height: 250px;
                 box-shadow: 0 8px 20px rgba(0,0,0,0.3);
                 border: 1px solid #ccc;
                 border-radius: 12px;
@@ -108,6 +113,7 @@ a {
                 .grid-chart-box {
                     display: flex;
                     flex-direction: column;
+                    height: 100%;
                     gap: 15px;
                     h1 {
                         font-weight: 300;
@@ -135,10 +141,13 @@ a {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-evenly;
+                    align-items: center;
                     ol {
+                        padding-top: 25px;
                         li {
-                            margin-bottom: 5px;
+                            margin-bottom: 20px;
                             list-style-type: none;
+                            text-align: center;
                         }
                     }
                 }
@@ -152,6 +161,21 @@ a {
         .box-high {
             grid-row: span 2;
         }
+        .box-profile {
+            height: calc(100vh - 200px);
+            grid-column: span 2;
+        }
     }
 
 }
+
+.custom-tooltip {
+    background-color: rgba(0, 77, 27, 0.9);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    font-size: 14px;
+    text-align: center;
+}
+

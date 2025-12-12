@@ -51,10 +51,27 @@ app.get("/data/chart2", async (req, res) => {
 
 
 app.get("/data/chart3", async (req, res) => {
-    const [update] = await pool.execute(`SELECT * FROM ek_kvalitet WHERE INSTITUTIONS_KATEGORI = 'IT & Digital' AND Køn = 'Kvinde'`)
+    const [update] = await pool.execute(`SELECT
+                                             COUNT(CASE WHEN Køn = 'Kvinde' THEN 1 END) AS Kvinder,
+                                             COUNT(CASE WHEN Køn = 'Mand' THEN 1 END) AS Mænd
+                                         FROM ek_kvalitet
+                                         WHERE INSTITUTIONS_KATEGORI = 'IT & Digital'`)
     res.send(update)
+});
+
+app.get("/jobs/:year", async (req, res) => {
+    const year = req.params.year
+    const query = `SELECT navn, \`${year}\` FROM erhverv_pr_landsdel`;
+    try {
+        const [data] = await pool.query(query)
+        res.send(data)
+    } catch {
+        res.send(`Årstalet ${year} findes ikke i SQL`).status(404)
+    }
+
 });
 
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 })
+

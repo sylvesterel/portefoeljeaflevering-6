@@ -112,15 +112,15 @@ renderChart2()
 
 
 
-let yearArrayChart3 = []
-let enrolledWomenChart3 = []
+let labelArrayForChart3 = ["Kvinder", "Mænd"]
+let dataArrayForChart3 = []
 
 async function pushDataToArrayChart3 () {
     const data = await fetchData('/data/chart3')
 
-    data.forEach(year => {
-        yearArrayChart2.push(year.year)
-        enrolledWomenChart2.push(year.enrolled_women_to_stem_education)
+    data.forEach(label => {
+        dataArrayForChart3.push(label.Kvinder)
+        dataArrayForChart3.push(label.Mænd)
     })
 }
 
@@ -128,35 +128,27 @@ async function pushDataToArrayChart3 () {
 
 async function renderChart3(){
     await pushDataToArrayChart3()
-    console.log(yearArrayChart2)
-    console.log(enrolledWomenChart2)
-    const ctx = document.querySelector('#chart2').getContext('2d');
-    const chart2 = new Chart(ctx, {
-        type: 'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+    console.log(labelArrayForChart3)
+    console.log(dataArrayForChart3)
+    const ctx = document.querySelector('#chart3').getContext('2d');
+    const chart3 = new Chart(ctx, {
+        type: 'pie', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
         data: {
-            labels: yearArrayChart2,
+            labels: labelArrayForChart3,
             datasets: [{
-                label: 'Kvinder optaget på STEM uddannelser',
-                data: enrolledWomenChart2,
+                data: dataArrayForChart3,
                 backgroundColor:'#D8D8D8'
             }]
         },
         options: {
             plugins: {
-                title: {
-                    display: true,
-                    text: 'Kvinder optaget på STEM uddannelser'
-                },
                 legend: {
                     display: true,
                     position: 'bottom'
                 }
             },
             layout:{
-                padding: {
-                    right: 800,
-                    left: 50
-                }
+
             }
         }
 
