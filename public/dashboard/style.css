@@ -16,6 +16,14 @@ a {
     text-decoration: inherit;
 }
 
+.login-photo {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
 .side-nav-container {
     position: fixed;
     left: 0;
@@ -33,13 +41,6 @@ a {
         align-items: center;
         text-align: center;
         gap: 40px;
-        #login-photo {
-            border-radius: 100%;
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            margin-bottom: 15px;
-        }
 
         .side-nav-login {
             p {
@@ -136,7 +137,7 @@ a {
                         justify-content: center;
                         align-items: center;
                         height: calc(100vh - 625px);
-                        width: calc(100vh - 450px);
+                        width: calc(100vh - 475px);
                     }
                 }
                 .grid-two-numbers {
@@ -161,12 +162,29 @@ a {
                     flex-direction: row;
                     justify-content: space-evenly;
                     align-items: center;
+                    width: calc(100vh - 475px);
                     ol {
                         li {
                             margin-bottom: 20px;
                             list-style-type: none;
                             text-align: center;
                         }
+                    }
+                }
+                .grid-profile {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: left;
+                    gap: 15%;
+                    font-family: Alumni Sans Pinstripe;
+                    h2 {
+                        margin-bottom: -5px;
+                        font-weight: 200;
+                    }
+                    h3 {
+                        font-size: 2.2rem;
+                        margin-bottom: 50px;
                     }
                 }
 

@@ -55,10 +55,7 @@ async function renderChart1(){
                 }
             },
             plugins: {
-                title: {
-                    display: true,
-                    text: 'Kvinder ansat i IT-Branchen'
-                },
+
                 legend: {
                     display: true,
                     position: 'bottom'
