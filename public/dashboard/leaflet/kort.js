@@ -35,14 +35,14 @@ async function countWorkplacePrCountryPart() {
 }
 
 function getColor(count) {
-    return count > 1800 ? '#00441b' :   // meget mørk grøn
-        count > 1200 ? '#006d2c' :
-            count > 800  ? '#238b45' :
-                count > 500  ? '#41ab5d' :
-                    count > 250  ? '#74c476' :
-                        count > 100  ? '#a1d99b' :
-                            count > 0    ? '#c7e9c0' :
-                                '#e5f5e0'; // ingen observationer
+    return count > 1800 ? '#800026' :
+        count > 1200 ? '#c51b8a' :
+            count > 800  ? '#e7298a' :
+                count > 500  ? '#f768a1' :
+                    count > 250  ? '#fa9fb5' :
+                        count > 100  ? '#fcc5c0' :
+                            count > 0    ? '#fde0dd' :
+                                '#fff5f8';
 }
 
 
@@ -98,6 +98,9 @@ async function displayCountryParts() {
         }
 
     }).addTo(map);
+
+    map.setZoom(6)
+
 }
 
 displayCountryParts();

@@ -59,6 +59,15 @@ app.get("/data/chart3", async (req, res) => {
     res.send(update)
 });
 
+
+app.get("/data/workFreedom", async (req, res) => {
+    const [update] = await pool.execute(`SELECT *
+                                         FROM work_place_rules`)
+    res.send(update)
+});
+
+
+
 app.get("/jobs/:year", async (req, res) => {
     const year = req.params.year
     const query = `SELECT navn, \`${year}\` FROM erhverv_pr_landsdel`;

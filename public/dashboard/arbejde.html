@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="leaflet/leaflet.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
-          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="../fonts.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
     <script src="leaflet/leaflet.js"></script>
 </head>
@@ -22,11 +22,11 @@
                 <h1>Sofie Frederiksen</h1>
             </div>
             <div class="side-nav-items">
-                <a><h1 id="nav-selected"> > Arbejde</h1></a>
+                <a><h1 id="nav-selected"> | Arbejde</h1></a>
                 <a href="uddannelse.html"><h1>Uddannelse</h1></a>
                 <a href="profil.html"><h1>Min profil</h1></a>
-                <h1>Indstillinger</h1>
-                <h1>Log ud</h1>
+                <a href="indstillinger.html"><h1>Indstillinger</h1></a>
+                <a href="../index.html"><h1>Log ud</h1></a>
             </div>
         </div>
     </header>
@@ -60,11 +60,11 @@
                         <div class="grid-two-numbers">
                             <div>
                                 <h2>Fleksibel Arbejdsplads</h2>
-                                <h3>65%</h3>
+                                <h3 id="fleks-job"></h3>
                             </div>
                             <div>
                                 <h2>Ikke Fleksibel Arbejdsplads</h2>
-                                <h3>34%</h3>
+                                <h3 id="ikke-fleks-job"></h3>
                             </div>
                         </div>
                     </div>
@@ -75,5 +75,6 @@
     </main>
     <script src="leaflet/kort.js"></script>
     <script src="chart/graf.js"></script>
+    <script src="dashboard.js"></script>
 </body>
 </html>
