@@ -37,6 +37,19 @@ app.get("/data/chart1", async (req, res) => {
     res.send(update)
 });
 
+app.get("/missionsdata", async (req, res) => {
+    const data = await pool.execute(`SELECT avg(alder)
+                                    FROM ek_kvalitet
+                                    where INSTITUTIONS_KATEGORI = 'IT & Digital'
+                                    and INSTITUTIONSAKT_BETEGNELSE != 'digital konceptudvikling'
+                                    and INSTITUTIONSAKT_BETEGNELSE != 'PB i Energimanagement'
+                                    and INSTITUTIONSAKT_BETEGNELSE != 'PB i IT-sikkerhed'
+                                    and INSTITUTIONSAKT_BETEGNELSE != 'PB i Softwareudvikling'
+                                    and INSTITUTIONSAKT_BETEGNELSE != 'PB i Webudvikling'
+                                     order by avg(alder) asc`)
+    res.send(data)
+});
+
 
 app.get("/events", async (req, res) => {
     const data = await pool.execute(`SELECT * FROM events`)
