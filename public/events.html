@@ -94,11 +94,18 @@
             background: white;
             border-radius: 1rem;
             box-shadow: 0 8px 25px #bfaf9b;
+            display: flex;
         }
 
         .events-overview  p{
             font-size: 1.2rem ;
             line-height: 1.6;
+        }
+
+        .events-overview img {
+            padding: 3rem;
+            width: 40%;
+            border-radius: 1rem;
         }
 
 
@@ -134,6 +141,10 @@
             background-color: white;
             border-radius: 10px;
             overflow: hidden;
+        }
+
+        .center-text {
+            text-align: center;
         }
 
         .events-table th {
@@ -282,6 +293,7 @@
     <p>
         FemTech arrangerer løbende faglige events, hvor du kan styrke dine kompetencer inden for tech, data og digital innovation. <br>
         Gennem workshops, talks og netværksarrangementer gør vi det lettere at tage det næste skridt i din karriere – hvad end du er studerende, ny i branchen eller erfaren specialist. <br>
+        Vi har både <span class="our-event">vores egne events</span> og <span class="guest-event">andres events som vi hoster</span> <br>
         <br>
         Du kan blandt andet deltage i:
         <ul class="events-list">
@@ -304,7 +316,7 @@
         
     </section>
         
-        <img src="woman-2.png"> </img>
+        <img src="imgs/events-pic-2.JPG">
 
     </section>
     
@@ -389,6 +401,10 @@
             const dateInfoArray = dbDate.split("T");
             const dateForSite = dateInfoArray[0];
 
+            // omformater tidspunkt
+            const dbTime = event.time
+            const timeInfoArray = dbTime.split(":")
+            const timeForSite = timeInfoArray[0] + ":" + timeInfoArray[1]
 
             const isOurs = event.is_ours === 1
 
@@ -399,22 +415,22 @@
                 const tr = document.createElement('tr');
                 tr.classList.add("our-event")
                 tr.innerHTML = `
-            <td>${dateForSite}</td>
-            <td>${event.time}</td>
+            <td class="center-text">${dateForSite}</td>
+            <td class="center-text">${timeForSite}</td>
             <td>${event.title}</td>
             <td>${event.place}</td>
-            <td><a href="">${event.registration}</a></td>
+            <td class="center-text"><a href="">${event.registration}</a></td>
         `;
                 tbody.appendChild(tr);
             } else {
                 const tr = document.createElement('tr');
                 tr.classList.add("guest-event")
                 tr.innerHTML = `
-            <td>${dateForSite}</td>
-            <td>${event.time}</td>
+            <td class="center-text">${dateForSite}</td>
+            <td class="center-text">${timeForSite}</td>
             <td>${event.title}</td>
             <td>${event.place}</td>
-            <td><a href="">${event.registration}</a></td>
+            <td class="center-text"><a href="">${event.registration}</a></td>
         `;
                 tbody.appendChild(tr)
             }
