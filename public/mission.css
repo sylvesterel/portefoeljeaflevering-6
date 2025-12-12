@@ -75,15 +75,12 @@
 
 .hero-text {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
     color: white;
-    font-family: 'Old Standard TT', serif;
     font-size: 10vh;
-    padding-right: 70vh;
+    padding-right: 74vh;
 }
 
-/* Mission text section */
+/* ----  Mission text section ---- */
 
 .mission-section {
     background-color: beige;
