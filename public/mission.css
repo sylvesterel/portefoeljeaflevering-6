@@ -21,7 +21,7 @@
     background-color: #D90368;
     color: white;
 }
-/* #C7B7A3 */
+
 .femtech-small-logo img {
     width: 8rem;
     height: auto;
@@ -43,6 +43,7 @@
 .nav-bar a:hover {
     font-size: 1.1rem;
 }
+
 .button-getStarted{
     padding-right: 3rem;
 }
@@ -85,7 +86,7 @@
 /* Mission text section */
 
 .mission-section {
-    background-color: #beige;
+    background-color: beige;
 }
 
 .mission-text p {
@@ -100,16 +101,8 @@
 
 /* Image carrousel section */
 
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Old Standard TT', serif;
 }
 
-}
 
 .wrapper .card {
     width: 350px;
