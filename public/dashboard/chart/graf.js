@@ -35,7 +35,7 @@ async function renderChart1(){
             datasets: [{
                 label: 'Kvinder ansat i IT-Branchen',
                 data: employedWomenArrayChart1,
-                backgroundColor:'#D8D8D8',
+                backgroundColor:'#D9036880',
                 borderWidth: 1,
                 fill: true,
                 tension: 0.35
@@ -101,7 +101,7 @@ async function renderChart2(){
             datasets: [{
                 label: 'Kvinder optaget på STEM uddannelser',
                 data: enrolledWomenChart2,
-                backgroundColor:'#D8D8D8',
+                backgroundColor:'#D9036880',
                 borderWidth: 1,
                 fill: true,
                 tension: 0.35
@@ -163,7 +163,7 @@ async function renderChart3(){
             labels: labelArrayForChart3,
             datasets: [{
                 data: dataArrayForChart3,
-                backgroundColor:'#D8D8D8'
+                backgroundColor: '#D90368'
             }]
         },
         options: {
@@ -181,3 +181,5 @@ async function renderChart3(){
 }
 
 renderChart3()
+
+
