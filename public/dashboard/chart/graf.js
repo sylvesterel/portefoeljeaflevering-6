@@ -35,10 +35,25 @@ async function renderChart1(){
             datasets: [{
                 label: 'Kvinder ansat i IT-Branchen',
                 data: employedWomenArrayChart1,
-                backgroundColor:'#D8D8D8'
+                backgroundColor:'#D8D8D8',
+                borderWidth: 1,
+                fill: true,
+                tension: 0.35
             }]
         },
         options: {
+            scales: {
+                x: {
+                    grid: {
+                        display: false
+                    }
+                },
+                y: {
+                    grid: {
+                        display: false
+                    }
+                }
+            },
             plugins: {
                 title: {
                     display: true,
@@ -86,15 +101,26 @@ async function renderChart2(){
             datasets: [{
                 label: 'Kvinder optaget på STEM uddannelser',
                 data: enrolledWomenChart2,
-                backgroundColor:'#D8D8D8'
+                backgroundColor:'#D8D8D8',
+                borderWidth: 1,
+                fill: true,
+                tension: 0.35
             }]
         },
         options: {
-            plugins: {
-                title: {
-                    display: true,
-                    text: 'Kvinder optaget på STEM uddannelser'
+            scales: {
+                x: {
+                    grid: {
+                        display: false
+                    }
                 },
+                y: {
+                    grid: {
+                        display: false
+                    }
+                }
+            },
+            plugins: {
                 legend: {
                     display: true,
                     position: 'bottom'
@@ -148,7 +174,6 @@ async function renderChart3(){
                 }
             },
             layout:{
-
             }
         }
 
