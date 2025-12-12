@@ -68,7 +68,7 @@ app.get("/data/chart3", async (req, res) => {
                                              COUNT(CASE WHEN Køn = 'Kvinde' THEN 1 END) AS Kvinder,
                                              COUNT(CASE WHEN Køn = 'Mand' THEN 1 END) AS Mænd
                                          FROM ek_kvalitet
-                                         WHERE INSTITUTIONS_KATEGORI = 'IT & Digital'`)
+                                         WHERE INSTITUTIONS_KATEGORI = 'IT & Digital'`) // https://stackoverflow.com/questions/888731/two-sql-count-queries
     res.send(update)
 });
 
