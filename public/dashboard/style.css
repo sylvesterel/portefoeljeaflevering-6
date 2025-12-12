@@ -187,6 +187,26 @@ a {
                         margin-bottom: 50px;
                     }
                 }
+                .grid-profile-settings {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: left;
+                    gap: 40%;
+                    font-family: Alumni Sans Pinstripe;
+                    h3 {
+                        font-size: 2.2rem;
+                        margin-bottom: 20px;
+                        font-weight: 500;
+                    }
+                    #delete-account {
+                        color: red;
+                    }
+                    h3:hover {
+                        font-weight: 800;
+                    }
+                }
+
 
             }
 
