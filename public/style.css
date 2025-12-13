@@ -97,11 +97,14 @@
 .femtech-big-logo img {
     width: 25rem;
     height: auto;
+    padding-top: 7rem;
 }
+
+/* ---------------- Short Mission ---------------- */
 
 .Short-Mission-div{
     display: flex;
-    padding-top: 25rem;
+    padding-top: 15rem;
 }
 
 .Short-Mission-box{
@@ -120,9 +123,40 @@
     padding: 2rem;
 }
 
+.Short-Mission-titel{
+    font-size: 2rem;
+}
+
+.Short-Mission-titel1{
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #D90368;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.Short-Mission-text{
+    padding-bottom: 1rem;
+}
+
+.Short-Mission-From{
+    padding-top: 0.5rem;
+    font-family: "Shadows Into Light Two", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Short-Mission-From1{
+    padding-bottom: 1.5rem;
+    font-style: italic;
+}
+
+
 .Short-Mission-box img{
-    width: 30rem;
-    height: auto;
+    width: auto;
+    height: 35rem;
+    padding-top: 1.5rem;
+
 }
 
 .Short-Mission-button button{
@@ -132,11 +166,9 @@
     color: white;
     background-color: #D90368;
     padding: 0.2rem 1rem;
-    justify-content: space-evenly;
     border: none;
     border-radius: 5rem;
     font-size: 2rem;
-
 }
 
 /* ---------------- ROLLEMODELLER OVERSIGT ---------------- */
