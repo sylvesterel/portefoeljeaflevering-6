@@ -80,7 +80,7 @@
     align-items: center;
     flex-direction: column;
     height: 95rem;
-    background-image: url("imgs/Frontpage1.jpg");
+    background-image: url("../imgs/Frontpage1.jpg");
     background-size: cover;
     background-position: center;
     padding-top: 20rem;
