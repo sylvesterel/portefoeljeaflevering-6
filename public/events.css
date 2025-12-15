@@ -47,15 +47,11 @@
 .button-getStarted button {
     background-color: white;
     border: none;
-    padding: 0.3rem 1rem;
+    padding: 0.2rem 1rem;
     border-radius: 10rem;
     font-size: 1rem;
     cursor: pointer;
     color: #D90368;
-}
-
-.button-getStarted button:hover {
-    background-color: lightgray;
 }
 
 .get-started:link {
@@ -66,6 +62,10 @@
 .get-started:visited {
     text-decoration: none;
     color: #D90368;
+}
+
+.button-getStarted button:hover {
+    background-color: lightgray;
 }
 
 
