@@ -93,17 +93,14 @@ body{
     justify-content: center;
     font-size: 4vh;
     color: black;
-    padding: 30vh;
+    padding: 20vh;
     margin: 0;
 }
 
 /* ----  Carrusel section ---- */
 .carousel {
-    width: 100%;
     max-width: 1400px;
-    margin: 5rem auto 10rem auto;
-    position: relative;
-    overflow: hidden;
+    margin: 5rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,18 +113,16 @@ body{
 
 .slides {
     display: flex;
-    flex-direction: row;
     gap: 40px;
     transition: transform 0.6s ease;
-    align-items: stretch;
 }
 
 .slide {
-    flex: 0 0 calc((100% - 80px) / 3);
-    box-sizing: border-box;
+    flex: 0 0 calc((100% - 80px) / 3); /* Viser kun 3 slides */
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .slide-box {
@@ -135,11 +130,7 @@ body{
     height: 420px;
     border-radius: 40px;
     padding: 40px 30px;
-    background: radial-gradient(
-            circle at center,
-            #e6007e 0%,
-            #ff3b3b 70%
-    );
+    background: radial-gradient(circle at center, #e7679b 0%, #D90368 70%);
     color: white;
     display: flex;
     flex-direction: column;
@@ -148,9 +139,8 @@ body{
 }
 
 .stat-value {
-    font-size: 96px;
+    font-size: 150px;
     font-weight: 700;
-    margin-bottom: 20px;
 }
 
 .stat-title {
@@ -162,7 +152,7 @@ body{
 .stat-meta {
     font-size: 12px;
     opacity: 0.7;
-    margin-top: auto;
+
 }
 
 .controls {
@@ -174,7 +164,7 @@ body{
 }
 
 .controls button {
-    background: rgba(0,0,0,0.5);
+    background: rgba(217, 3, 104, 0.5);
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -184,7 +174,7 @@ body{
 }
 
 .controls button:hover {
-    background: rgba(0,0,0,0.8);
+    background: rgba(217, 3, 104, 0.8);
 }
 
 /* ------ Footer ------ */
