@@ -13,14 +13,18 @@ let currentIndex = 0;
 const slidesPerView = 3;
 
 function showSlide(index) {
-    if (index < 0) {
+    const slideWidth = document.querySelector('.slide').offsetWidth + 40;
+    currentIndex = index;
+
+    if (currentIndex < 0) {
         currentIndex = slide.length - slidesPerView;
-    } else if (index > slide.length - slidesPerView) {
-        currentIndex = 0;
-    } else {
-        currentIndex = index;
     }
-    slides.style.transform = `translateX(-${(100 / slidesPerView) * currentIndex}%)`;
+
+    if (currentIndex > slide.length - slidesPerView) {
+        currentIndex = 0;
+    }
+
+    slides.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
 }
 
 prevBtn.addEventListener('click', () => {
