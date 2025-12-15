@@ -43,6 +43,7 @@
 .nav-bar a:hover {
     font-size: 1.1rem;
 }
+
 .button-getStarted{
     padding-right: 3rem;
 }
@@ -70,7 +71,6 @@
 .button-getStarted button:hover {
     background-color: lightgray;
 }
-
 
 /* ---------------- FORSIDE ---------------- */
 
@@ -170,17 +170,23 @@
 
 }
 
-.Short-Mission-button button{
+.Short-Mission-button-linked{
     display: flex;
     justify-content: space-evenly;
     cursor: pointer;
     color: white;
     background-color: #D90368;
-    padding: 0.2rem 1rem;
+    padding: 0.4rem 2rem;
     border: none;
     border-radius: 5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    outline: none;
 }
+
+.Short-Mission-button-linked:hover{
+    background-color: #B00258;;
+}
+
 
 /* ------ Footer ------ */
 footer {
