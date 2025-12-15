@@ -22,6 +22,7 @@ const pool = mysql.createPool({
      1. Kombinationen er path.join og process.cwd returnere hvilken mappe som vores fil/express app kører fra.
      2. express.static laver et middelware hvor filer er tilgængelige igennem HTTP.
      I dette tilfælde bruger vi mappen "public", som vores offentlig tilgængelige mappe via HTTP.
+     kh sylle <3
 
     ----------- */
 
