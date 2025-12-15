@@ -76,6 +76,7 @@ body {
 .login-section {
     display: flex;
     height: 100vh;
+
 }
 
 .login-section img {
@@ -159,6 +160,11 @@ input:focus {
     text-decoration: underline;
     font-weight: bold;
     cursor: pointer;
+}
+
+.continue{
+    text-decoration: none;
+    color: white;
 }
 
 
