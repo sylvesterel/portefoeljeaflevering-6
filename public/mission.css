@@ -4,6 +4,8 @@
     font-family: Ppeditorialnew-Ultralight;
 }
 
+
+
 body{
     background-color: #feecd8;
 
@@ -19,6 +21,7 @@ body{
     transition: background 0.3s ease;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    z-index: 1000;
 }
 
 .navbar.scrolled {
@@ -98,7 +101,7 @@ body{
 .carousel {
     width: 100%;
     max-width: 1400px;
-    margin: 10rem auto;
+    margin: 5rem auto 10rem auto;
     position: relative;
     overflow: hidden;
     display: flex;

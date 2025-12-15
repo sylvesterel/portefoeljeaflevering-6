@@ -137,6 +137,7 @@
 
 .Short-Mission-text{
     padding-bottom: 1rem;
+    font-size: 1rem
 }
 
 .Short-Mission-From{
@@ -169,118 +170,6 @@
     border: none;
     border-radius: 5rem;
     font-size: 2rem;
-}
-
-/* ---------------- ROLLEMODELLER OVERSIGT ---------------- */
-
-.role-model-section {
-    background-color: #D90368;
-    text-align: center;
-    padding: 5rem 0;
-    color: white;
-}
-
-.role-model-titel {
-    font-size: 6rem;
-}
-
-.role-model-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    padding: 0;
-}
-
-.role-model-list li {
-    width: 15rem;
-    text-align: center;
-}
-
-.role-model-list img {
-    width: 13rem;
-    height: auto;
-    border-radius: 50%;
-    border: none;
-}
-
-.full-name {
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-
-/* ---------------- KNAPPER TIL GRAF ---------------- */
-
-.second-section {
-    background-color: white;
-    padding: 8rem 0;
-    display: flex;
-    justify-content: center;
-}
-.buttons {
-    list-style: none;
-    display: flex;
-    gap: 4rem;
-    padding: 0;
-    margin: 0;
-}
-
-.buttons button {
-    color: white;
-    border: none;
-    border-radius: 8rem;
-    padding: 1.5rem 3rem;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-.buttons button:hover {
-    background-color: #445E93;
-}
-
-
-/* ---------------- ROLLEMODEL SEKTIONER ---------------- */
-
-.role-model {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8vh;
-    padding: 10vh;
-}
-
-.role-model img {
-    width: 40vh;
-    height: auto;
-    border-radius: 50%;
-}
-
-.role-model p {
-    font-size: 3vh;
-}
-
-
-/* --- Individuelle farver --- */
-
-.third-section {
-    background-color: #D90368;
-    color: white;
-}
-
-.fourth-section {
-    background-color: white;
-    color: #D90368;
-}
-
-.fifth-section {
-    background-color: #D90368;
-    color: white;
-}
-
-.sixth-section {
-    background-color: white;
-    color: #D90368;
 }
 
 /* ------ Footer ------ */
