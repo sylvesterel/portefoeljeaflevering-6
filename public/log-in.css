@@ -60,6 +60,16 @@ body {
     background-color: lightgray;
 }
 
+.get-started:link {
+    text-decoration: none;
+    color: #D90368;
+}
+
+.get-started:visited {
+    text-decoration: none;
+    color: #D90368;
+}
+
 
 /* ---- Login-Section ---- */
 
