@@ -139,6 +139,18 @@
     font-size: 3vh;
 }
 
+/* --- Tekst Styling --- */
+
+.role-model-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.message{
+    font-style: italic;
+}
+
 
 /* --- Individuelle farver --- */
 
