@@ -205,6 +205,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    margin-left: 150px;
 }
 
 .SIGNUP {
@@ -230,7 +231,7 @@ footer {
     justify-content: space-evenly;
     font-size: 0.9rem;
     font-weight: 300;
-    padding-right: 2.5rem;
+    padding-left: 14rem;
 }
 
 .all-list ul {
