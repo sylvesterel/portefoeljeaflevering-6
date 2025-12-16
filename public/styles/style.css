@@ -225,6 +225,8 @@ footer {
     width: 20rem;
     font-weight: 300;
     font-size: 0.9rem;
+    color: white;
+    background-color: #e14182;
 }
 
 .SIGNUP:hover {
