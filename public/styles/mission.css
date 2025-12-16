@@ -206,19 +206,19 @@ footer {
 }
 
 .SIGNUP {
-    border: 0.09rem solid white;
+    border: 0.09rem solid #feecd8;
     text-align: center;
     padding: 0.6rem;
     width: 20rem;
     font-weight: 300;
     font-size: 0.9rem;
-    color: white;
+    color: #feecd8;
     background-color: #e14182;
 }
 
 .SIGNUP:hover {
     background-color: #D90368;
-    border-color: white;
+    border-color: #feecd8;
 }
 
 .all-list {
@@ -249,7 +249,7 @@ footer {
 }
 
 .footer-bottom-left {
-    color: white;
+    color: #feecd8;
     font-size: 0.6rem;
 }
 
