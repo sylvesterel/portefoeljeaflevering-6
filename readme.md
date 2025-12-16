@@ -2,6 +2,8 @@
 Dette repository indeholder vores source code for afleveringen af Porteføljeaflevering 6 fra Team Supernova. (Mathilde, Sylvester, Johanne, Rosaline og Noah)
 Vi har lavet en simpel hjemmeside, med et et dashboard hvor man kan klikke rundt og se statistik.
 
+** Siden har ikke responsive design :)**
+
 ## 📁 Live Action Demo
 Gå til http://13.48.19.175/ (EC2 instans hos AWS)
 
