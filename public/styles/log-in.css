@@ -94,13 +94,6 @@ body {
     background-color: #feecd8;
 }
 
-.login-titel p {
-    font-size: 0.75rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-    color: darkslategrey;
-}
 
 .login-titel h2 {
     font-size: 2.4rem;
