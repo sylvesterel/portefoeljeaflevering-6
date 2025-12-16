@@ -19,14 +19,13 @@ body{
     transition: background 0.3s ease;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    z-index: 1000;
 }
 
 .navbar.scrolled {
     background-color: #D90368;
     color: white;
 }
-
+/* #C7B7A3 */
 .femtech-small-logo img {
     width: 8rem;
     height: auto;
@@ -56,15 +55,11 @@ body{
 .button-getStarted button {
     background-color: white;
     border: none;
-    padding: 0.3rem 1rem;
+    padding: 0.2rem 1rem;
     border-radius: 10rem;
     font-size: 1rem;
     cursor: pointer;
     color: #D90368;
-}
-
-.button-getStarted button:hover {
-    background-color: lightgray;
 }
 
 .get-started:link {
@@ -75,6 +70,10 @@ body{
 .get-started:visited {
     text-decoration: none;
     color: #D90368;
+}
+
+.button-getStarted button:hover {
+    background-color: lightgray;
 }
 
 /* ---- Mission Forside ---- */
