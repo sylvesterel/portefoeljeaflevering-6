@@ -104,6 +104,11 @@
     background-color: lightgray;
 }
 
+.frontpage-button-linked{
+    text-decoration: none;
+    color: #D90368;
+}
+
 .femtech-big-logo img {
     width: 25rem;
     height: auto;
@@ -220,6 +225,8 @@ footer {
     width: 20rem;
     font-weight: 300;
     font-size: 0.9rem;
+    color: white;
+    background-color: #e14182;
 }
 
 .SIGNUP:hover {
